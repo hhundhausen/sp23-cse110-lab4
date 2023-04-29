@@ -22,13 +22,20 @@
 11.  The function will return **[50, 100, 150]** because at line 14 the variable **discounted** is returned. The variable **discounted** is declared with the **const** keyword. The **const** keyword provides a variable the same scope as the **let** keyword and prevents a varibale from being reassigned after the first assinged. Although, line 8 pushes values into **discounted** it is not being reassinged. Hence, the function will be able to return the variable **discounted** which is  **[50, 100, 150]**.  
 
 12. *Data Types*
+
 a. user.name 
+
 b. student['Grad Year']
+
 c. student.greeting()
+
 d. student['Favorite Teacher'].name
+
 e. student.courseLoad[0]
 
-13. *Arithmetic* 
+
+13.  *Arithmetic* 
+ 
 a. ``` ‘3’ + 2 ```
     The output is **32**, because in JavaScript intergers will map to their exact string representation and the values are being concatenated. 
 b. ```‘3’ - 2```
@@ -46,19 +53,26 @@ e. ```'3' + undefined```
 f. ```'3' - undefined```
     The output is **NaN**, because the line of code is subtracting the string ```'3'``` with the value ```undefined```. The value ```undefined``` becomes ```NaN``` in numerial operations. 
 
-14. *Comparison* 
+14.  *Comparison* 
+
 a. ```‘2’ > 1```
     The output is **true**, because in JavaScript comparing values of different types will convert the values to numbers. Hence, since the number 2 is greater than the number 1 the line of code will output true. 
+
 b. ```‘2’ < ‘12’```
     The output is **false**, because JavaScript compares two strings in lexicographical order. Hence, since the first charcter in the string ```'12'``` which is '1' is greater than '2' the line of code will print false.  
+
 c. ```2 == ‘2’```
     The output is **true**, because JavaScript will convert values of different types to numbers and compare. Since the number 2 is equal to the number 2, the line of code will print true.  
+
 d. ```2 === ‘2’```
     The output is **false**, because JavaScript will test equality with the triple equal sign without type conversion. Since the values are of different types (one is a number and the other is a string) the output will be false. 
+
 e. ```true == 2```
     The output will be **false**, because JavaScript will convert the value of different types to numbers. The value true will be converted to its numeric represetation **1** and it be compared against the number 2. Since number 1 and number 2 do not equal one another the code will output false. 
+
 f. ```true === Boolean(2)```
     The output is **true**, because the line of code will first perform ```Boolean(2)``` conversion which will equal to true. Then, the line of code it will check if true equals true, which is correct. 
+
 15.  The difference between **==** and **===** operators is the conversion of types. The **==** operation will convert values of different types to compare. The **===** operation will not convert values of different types to compare. 
 16. Part written in [part2-question16.js](part2-question16.js) 
 17. The function above when called with the parameters ```modifyArray([1,2,3], doSomething)``` will output all of each element in ```[1, 2, 3]``` multipled by two. I arrived from this result, because the modifyArray function is iterating through all of the elements and the doSomething function is being called on each element to multiple it by two. Therefore the output will be **[2, 4, 6]**. 
