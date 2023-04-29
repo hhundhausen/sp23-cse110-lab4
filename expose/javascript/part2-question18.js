@@ -1,6 +1,6 @@
-const intervalS = setInterval(seconds, 1000, "Parameter 1"); 
+const intervalS = setInterval(seconds, 1000); 
 
-function seconds(a) {
+function seconds() {
     var d = new Date(); 
     var time = d.toLocaleTimeString(); 
     console.log(time); 
